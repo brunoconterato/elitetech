@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="br.com.brb4.brb4.CPFRegisterActivity">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="78dp"
+                android:layout_height="25dp"
+                android:background="@drawable/logo_brb_mini"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="55dp"/>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_marginRight="15dp">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="30dp"
+                    android:layout_height="27dp"
+                    android:background="@drawable/coins"/>
+
+                <TextView
+                    android:id="@+id/points_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="teste"
+                    android:textSize="24sp"
+                    android:textColor="#4F5863"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="CPF"
+                android:textSize="26sp"
+                android:textColor="#FF965B"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_face_black_24dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="CPF"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="PROSSEGUIR"
+                android:textColor="#fff"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:onClick="goToBriefActivity"
+                android:background="#47525E"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/carro_3" />
+
+</LinearLayout>

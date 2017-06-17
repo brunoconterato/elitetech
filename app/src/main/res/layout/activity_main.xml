@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_background"
+    tools:context="br.com.brb4.brb4.MainActivity"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="294dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/brbfinanciamentos"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FINANCIE NO BRB"
+        android:layout_marginTop="30dp"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACUMULE PONTOS"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TROQUE POR PRÊMIOS"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_play_circle_filled_black_24dp"
+        android:backgroundTint="#ffffff"
+        android:onClick="startSimulation"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textAlignment="center"
+        android:text="Compartilhe a novidade e ganhe mais 1.000 pts de bônus"
+        android:textSize="16sp"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ic_share_black_24dp"
+        android:backgroundTint="#fff"/>
+
+</LinearLayout>

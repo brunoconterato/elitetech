@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/simulation_background"
+    tools:context="br.com.brb4.brb4.SimulationActivity">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="78dp"
+                android:layout_height="25dp"
+                android:background="@drawable/logo_brb_mini"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="55dp"/>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_marginRight="15dp">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="30dp"
+                    android:layout_height="27dp"
+                    android:background="@drawable/coins"/>
+
+                <TextView
+                    android:id="@+id/points_text_view_simulation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="1000 pts"
+                    android:textSize="24sp"
+                    android:textColor="#4F5863"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_monetization_on_black_24dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Valor do veículo"
+                android:textColorHint="#98A4B4"
+                android:text="40.000,00"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_date_range_black_24dp"/>
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:spinnerMode="dropdown"
+                android:dropDownWidth="220dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_monetization_on_black_24dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Valor de entrada"
+                android:textColorHint="#98A4B4"
+                android:text="4.000,00"/>
+
+        </LinearLayout>
+
+        <RadioGroup android:id="@+id/toggleGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            >
+
+            <ToggleButton android:id="@+id/btn_24x"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textOn="24x"
+                android:textOff="24x"
+                android:onClick="onToggle"
+                android:checked="true"
+                android:background="@drawable/plots_rounded" />
+
+            <ToggleButton android:id="@+id/btn_36x"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textOn="36x"
+                android:textOff="36x"
+                android:onClick="onToggle"
+                android:background="@drawable/plots_rounded" />
+
+            <ToggleButton android:id="@+id/btn_48x"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textOn="48x"
+                android:textOff="48x"
+                android:onClick="onToggle"
+                android:background="@drawable/plots_rounded" />
+
+            <ToggleButton android:id="@+id/btn_60x"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textOn="60x"
+                android:textOff="60x"
+                android:onClick="onToggle"
+                android:background="@drawable/plots_rounded" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parcelas mensais: R$ 1500,00"
+            android:textSize="20sp"
+            android:textColor="#00ADEF"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Taxa de juros: 2,2 % a.m."
+            android:textSize="20sp"
+            android:textColor="#00ADEF"
+            android:layout_marginTop="5dp"/>
+
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Economize ate 5% ao financiar um modelo 0km"
+            android:textSize="24sp"
+            android:textColor="#FF9153"
+            android:textAlignment="center"/>
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="FINANCIAR AGORA"
+            android:textColor="#fff"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:onClick="goToBrandSelection"
+            android:background="#47525E"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/carro_0"/>
+
+</LinearLayout>
